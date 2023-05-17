@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	background: #ccc;
+	transition: background-color 1s ease-in-out, color 1s ease-in-out;
+	align-items: center;
+	justify-content: center;
+}
+
+.relogio {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 200px;
+	width: 650px;
+	background: transparent;
+	border-radius: 10px;
+	box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.marcadores {
+	height: 150px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background: rgba(5, 5, 5, .9);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+	border-radius: 100%;
+	letter-spacing: 3px;
+	transition: 0.3s ease-in-out;
+}
+
+span {
+	font-weight: bolder;
+	font-size: 60px;
+}
+
+#tempo {
+	font-size: 10px;
+}
+
+
+#dark-mode-btn {
+	height: 70px;
+	width: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background: rgba(5, 5, 5, .9);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+	border-radius: 100%;
+	letter-spacing: 3px;
+}
+
+
+
+/* hover */
+
+.marcadores:hover {
+	color: black;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+	background-color: #ccc;
+	transition: 0.3s ease-in-out;
+}
+
+
+/*Dark Mode*/
+
+body.dark-mode {
+  /*background: linear-gradient(120deg, red, yellow);*/
+  background: #313331;
+}
