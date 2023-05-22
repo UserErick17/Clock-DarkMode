@@ -17,35 +17,7 @@ const relogio = setInterval(function time() {
 	segundos.textContent = s;
 });
 
-
-/*
-old code 
-
-const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-const btn = document.getElementById('dark-mode-btn');
-
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-}
-
-// Detecta automaticamente se o modo escuro está habilitado
-if (darkModeMediaQuery.matches) {
-    document.body.classList.add('dark-mode');
-}
-
-// Adiciona um listener de eventos ao botão para alternar manualmente entre os modos
-if (btn.addEventListener('click', toggleDarkMode)){
-
-	var dark = "Shine";
-
-	let input = document.getElementById("dark-mode-btn").innerHTML = Shine;
-  input.value = Shine;
-  
-  Inclui o input no elemento body
-  document.body.appendChild( button )
-}
-*/
-
+/* DARK MODE */
 
 
 //Da preferencia ao modo escuro na janela
@@ -74,3 +46,33 @@ btn.addEventListener('click', toggleDarkMode);
 
 // Atualiza o texto do botão ao carregar a página
 updateButtonText();
+
+
+
+/*
+old code 
+
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const btn = document.getElementById('dark-mode-btn');
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
+// Detecta automaticamente se o modo escuro está habilitado
+if (darkModeMediaQuery.matches) {
+    document.body.classList.add('dark-mode');
+}
+
+// Adiciona um listener de eventos ao botão para alternar manualmente entre os modos
+if (btn.addEventListener('click', toggleDarkMode)){
+
+	var dark = "Shine";
+
+	let input = document.getElementById("dark-mode-btn").innerHTML = Shine;
+  input.value = Shine;
+  
+  Inclui o input no elemento body
+  document.body.appendChild( button )
+}
+*/
